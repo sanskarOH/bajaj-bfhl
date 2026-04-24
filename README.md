@@ -1,6 +1,3 @@
-Here is the raw Markdown code for the README you provided. You can copy and paste this directly into your `README.md` file!
-
-```markdown
 # 📦 Bajaj BFHL – Full Stack Engineering Challenge
 
 ## 🚀 Overview
