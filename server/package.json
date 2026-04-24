@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "A simple rest api created for bajaj finserv test",
+  "description": "A simple bfhl visualiser created for bajaj finserv test",
   "homepage": "https://github.com/sanskarOH/bajaj-fsd#readme",
   "bugs": {
     "url": "https://github.com/sanskarOH/bajaj-fsd/issues"
@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
