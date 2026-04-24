@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A simple rest api created for bajaj finserv test",
+  "homepage": "https://github.com/sanskarOH/bajaj-fsd#readme",
+  "bugs": {
+    "url": "https://github.com/sanskarOH/bajaj-fsd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanskarOH/bajaj-fsd.git"
+  },
+  "license": "ISC",
+  "author": "sanskar diwedi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
