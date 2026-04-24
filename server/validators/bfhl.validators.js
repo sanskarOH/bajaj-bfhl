@@ -1,31 +1,42 @@
 exports.validateInput = (data) => {
-    const validEdges = [];
-    const invalidEdges = [];
-    const seenEdges = new Set();
-    const duplicatesEdges = new Set();
+  const validEdges = [];
+  const invalidEdges = [];
+  const seenEdges = new Set();
+  const duplicateEdges = new Set();
 
-    const regex = /^[A-Z]->[A-Z]$/;
+  const regex = /^[A-Z]->[A-Z]$/;
 
-    for (let entry of data) {
-        entry = entry.trim();
-
-        if(!regex.test(entry) || entry[0] === entry[3]){
-            invalidEdges.push(entry);
-            continue;
-        }
-
-        if (seenEdges.has(entry)){
-            duplicatesEdges.add(entry);
-            continue;
-        }
-
-        seenEdges.add(entry);
-        validEdges.push(entry);
+  for (let entry of data) {
+  
+    if (typeof entry !== "string") {
+      invalidEdges.push(entry);
+      continue;
     }
 
-    return {
-        validEdges,
-        invalidEdges,
-        duplicatesEdges : Array.from(duplicatesEdges),
-    };
+    entry = entry.trim();
+
+    if (!entry) {
+      invalidEdges.push(entry);
+      continue;
+    }
+
+    if (!regex.test(entry) || entry[0] === entry[3]) {
+      invalidEdges.push(entry);
+      continue;
+    }
+
+    if (seenEdges.has(entry)) {
+      duplicateEdges.add(entry);
+      continue;
+    }
+
+    seenEdges.add(entry);
+    validEdges.push(entry);
+  }
+
+  return {
+    validEdges,
+    invalidEdges,
+    duplicateEdges: Array.from(duplicateEdges),
+  };
 };

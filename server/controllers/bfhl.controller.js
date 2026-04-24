@@ -12,9 +12,9 @@ exports.processBFHL = (req, res) => {
     const result = processGraph(validation.validEdges);
 
     res.json({
-      user_id: "yourname_ddmmyyyy",
-      email_id: "your@email.com",
-      college_roll_number: "YOURROLL",
+      user_id: "sanskardiwedi_15062005",
+      email_id: "sd4836@srmist.edu.in",
+      college_roll_number: "RA2311030010287",
       hierarchies: result.hierarchies,
       invalid_entries: validation.invalidEdges,
       duplicate_edges: validation.duplicateEdges,
