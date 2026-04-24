@@ -62,7 +62,7 @@ server/
 ---
 
 ## 🌐 Live API
-**POST** `https://<your-render-url>/bfhl`
+**POST** `https://bajaj-bfhl-624a.onrender.com/bfhl`
 
 ---
 
