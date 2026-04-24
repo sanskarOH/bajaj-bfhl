@@ -149,7 +149,7 @@ server/
 
 Using cURL:
 ```bash
-curl -X POST [https://your-url.onrender.com/bfhl](https://your-url.onrender.com/bfhl) \
+curl -X POST [https://bajaj-bfhl-624a.onrender.com/bfhl] \
 -H "Content-Type: application/json" \
 -d '{"data":["A->B","B->C"]}'
 ```
@@ -177,7 +177,7 @@ Deployed using **Render**
 ## 🛠️ Setup Locally
 
 ```bash
-git clone [https://github.com/sanskarOH/bajaj-bfhl](https://github.com/sanskarOH/bajaj-bfhl)
+git clone [https://github.com/sanskarOH/bajaj-bfhl]
 cd bajaj-bfhl/server
 npm install
 npm start
